@@ -22,6 +22,7 @@
 @media screen and (min-width: 992px) {
   .article {
     flex-direction: row;
+    align-items: flex-start;
   }
   .artImg {
     width: 50%;
