@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #612406;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fbf7e3;
+  height: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50px;
+}
+ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  border: 1px solid #f3df85;
+  border-radius: 20px;
+  background-color: #f3df85;
+  margin: 2px;
+  padding: 5px;
+  font-size: x-small;
+}
+.mainNavBtn {
+  font-weight: 700;
+  font-size: small;
+}
+.mainNavBtn > img {
+  width: 18px;
+  margin-right: 2px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #612406;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  width: 250px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: #fbf7e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.cardTop > img {
+  max-width: 250px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #612406;
+}
+.bottomInner {
+  margin-right: 15px;
+  color: #612406;
+}
+.bottomInner > p {
+  margin-left: 10px;
+}
+.button {
+  width: 175px;
+  height: 30px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  border: 1px solid #f3df85;
+  background-color: #f3df85;
+  color: #612406;
+}
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  background-color: #fbf7e3;
+  border: 1px solid #fbf7e3;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #612406;
+}
+.artImg {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.artImg > img {
+  width: 90%;
+}
+.descContainer {
+  width: 90%;
+}
+@media screen and (min-width: 992px) {
+  .article {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .artImg {
+    width: 50%;
+    margin-top: 10px;
+    order: 0;
+  }
+  .descContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    order: 1;
+  }
+}
